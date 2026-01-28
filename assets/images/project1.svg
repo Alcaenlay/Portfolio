@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Teachy Tally web app preview">
+  <defs>
+    <linearGradient id="grad1" x1="0" x2="1">
+      <stop offset="0" stop-color="#4f8cff"/>
+      <stop offset="1" stop-color="#6ea8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0a0e1a"/>
+  <!-- Top nav bar -->
+  <rect x="0" y="0" width="100%" height="50" fill="#0f1720"/>
+  <text x="20" y="32" font-family="Poppins, sans-serif" font-weight="700" font-size="20" fill="#4f8cff">Teachy Tally</text>
+  <!-- Sidebar -->
+  <rect x="0" y="50" width="120" height="400" fill="#0f1720"/>
+  <circle cx="60" cy="90" r="20" fill="url(#grad1)"/>
+  <rect x="15" y="140" rx="4" width="90" height="8" fill="#4f8cff" opacity="0.8"/>
+  <rect x="15" y="160" rx="4" width="90" height="8" fill="#4f8cff" opacity="0.4"/>
+  <rect x="15" y="180" rx="4" width="90" height="8" fill="#4f8cff" opacity="0.4"/>
+  <!-- Main content -->
+  <rect x="120" y="50" width="680" height="400" fill="#0a0e1a"/>
+  <!-- Content cards -->
+  <rect x="140" y="80" rx="8" width="280" height="140" fill="#0f1720"/>
+  <rect x="150" y="95" rx="4" width="80" height="20" fill="#4f8cff" opacity="0.8"/>
+  <rect x="150" y="130" rx="2" width="120" height="4" fill="#9aa4b2" opacity="0.5"/>
+  <rect x="150" y="140" rx="2" width="100" height="4" fill="#9aa4b2" opacity="0.5"/>
+  
+  <rect x="440" y="80" rx="8" width="280" height="140" fill="#0f1720"/>
+  <rect x="450" y="95" rx="4" width="80" height="20" fill="#6ea8ff" opacity="0.8"/>
+  <rect x="450" y="130" rx="2" width="120" height="4" fill="#9aa4b2" opacity="0.5"/>
+  <rect x="450" y="140" rx="2" width="100" height="4" fill="#9aa4b2" opacity="0.5"/>
+  
+  <rect x="140" y="240" rx="8" width="580" height="180" fill="#0f1720"/>
+  <rect x="160" y="260" rx="4" width="200" height="16" fill="#4f8cff" opacity="0.7"/>
+  <rect x="160" y="295" rx="2" width="60" height="3" fill="#9aa4b2" opacity="0.4"/>
+  <rect x="230" y="295" rx="2" width="60" height="3" fill="#9aa4b2" opacity="0.4"/>
+  <rect x="300" y="295" rx="2" width="60" height="3" fill="#9aa4b2" opacity="0.4"/>
+  
+  <rect x="160" y="330" rx="3" width="100" height="60" fill="url(#grad1)" opacity="0.6"/>
+  <rect x="280" y="330" rx="3" width="100" height="60" fill="#4f8cff" opacity="0.3"/>
+  <rect x="400" y="330" rx="3" width="100" height="60" fill="#4f8cff" opacity="0.3"/>
+</svg>

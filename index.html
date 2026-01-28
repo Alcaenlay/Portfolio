@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14">
+  <title>Allen Paulo V. Caya — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <nav class="site-nav" id="siteNav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">ALLEN PAULO</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" data-target="hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-theme"><button id="themeToggleNav" class="btn ghost" aria-pressed="true">Theme</button></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>ALLEN PAULO V. CAYA</h1>
+        <p class="sub">Sulib, Pangil, Laguna • 09773069531 • <a href="mailto:allencaya132@gmail.com">allencaya132@gmail.com</a></p>
+        <p class="summary">I am an IT Student Majoring in Web and Mobile Application Development. I adapt quickly to new languages and technologies and can work flexibly on front-end and back-end tasks. I enjoy collaborating with teammates and ensure systems I develop work smoothly and as intended.</p>
+        <div class="actions">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact</a>
+          <button id="themeToggle" class="btn ghost" aria-pressed="true" title="Toggle dark/light theme">Toggle Theme</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="avatar">
+          <img src="assets/images/ID_Profile.png" alt="Allen Paulo V. Caya avatar">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="skills" class="card">
+      <h2>Professional Skills</h2>
+      <ul class="skills-grid">
+        <li class="skill-item"><img src="assets/images/html.svg" class="skill-icon" alt="HTML"> <div><strong>Web Development:</strong> HTML, CSS, JavaScript, React, PHP, Python, Java</div></li>
+        <li class="skill-item"><img src="assets/images/python.svg" class="skill-icon" alt="Python"> <div><strong>Application Development:</strong> Python, C#, Java, C++</div></li>
+        <li class="skill-item"><img src="assets/images/firebase.svg" class="skill-icon" alt="Firebase"> <div><strong>Database:</strong> Firebase, SQL, TinyDB</div></li>
+        <li class="skill-item"><img src="assets/images/android.svg" class="skill-icon" alt="Tools"> <div><strong>Tools:</strong> Android Studio, VS Code, Visual Studio, PyCharm, IntelliJ</div></li>
+      </ul>
+    </section>
+
+    <section id="certifications" class="card">
+      <h2>Certifications</h2>
+      <div class="certs-grid">
+        <div class="cert-card" data-cert="assets/images/certs/Python Developer_certificate.jpg">
+          <img src="assets/images/certs/Python Developer_certificate.jpg" alt="Python Developer Certificate">
+          <p>Python Developer – sololearn</p>
+        </div>
+        <div class="cert-card" data-cert="assets/images/certs/Web Development_certificate.jpg">
+          <img src="assets/images/certs/Web Development_certificate.jpg" alt="Web Development Certificate">
+          <p>Web Development – sololearn</p>
+        </div>
+        <div class="cert-card" data-cert="assets/images/certs/Coding Foundations_certificate.jpg">
+          <img src="assets/images/certs/Coding Foundations_certificate.jpg" alt="Coding Foundations Certificate">
+          <p>Coding Foundations – sololearn</p>
+        </div>
+        <div class="cert-card" data-cert="assets/images/certs/Coding for Data_certificate.jpg">
+          <img src="assets/images/certs/Coding for Data_certificate.jpg" alt="Coding for Data Certificate">
+          <p>Coding for Data – sololearn</p>
+        </div>
+        <div class="cert-card" data-cert="assets/images/certs/Angular_certificate.jpg">
+          <img src="assets/images/certs/Angular_certificate.jpg" alt="Angular Certificate">
+          <p>Angular – sololearn</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <ul>
+        <li>Laguna State Polytechnic University Siniloan Campus | 2022–Present</li>
+        <li>Siniloan Integrated National High School | 2021–2022</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Past Projects</h2>
+      <p>Below are some projects I've worked on. Click a card for details.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image"><img src="assets/images/proj/proj1/1.png" alt="Teachy Tally web view"></div>
+          <h3>Teachy Tally — Web App</h3>
+          <p>All-in-One Classroom Assistant for attendance, scheduling, and grading.</p>
+          <div style="display:flex;gap:6px">
+            <button class="btn small" data-title="Teachy Tally" data-desc="TeachyTally empowers educators to track attendance with QR codes, manage class schedules, and maintain a digital gradebook. Generate unique QR codes for students, scan for instant attendance marking, enter grades in a digital gradebook, and get AI-powered insights with daily logs and reports." data-img1="assets/images/proj/proj1/1.png" data-img2="assets/images/proj/proj1/2.png">Learn More</button>
+            <a href="https://teachy-tally.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn small">View Live</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image"><img src="assets/images/project2.svg" alt="Project B screenshot"></div>
+          <h3>Project B — Web App</h3>
+          <p>Web application for inventory tracking (PHP, MySQL).</p>
+          <button class="btn small" data-title="Project B — Web App" data-desc="A responsive inventory tracking system developed with PHP and MySQL. Includes reports and role-based access.">View</button>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image"><img src="assets/images/project3.svg" alt="Project C screenshot"></div>
+          <h3>Project C — Data Tool</h3>
+          <p>Python tool for data processing and visualization.</p>
+          <button class="btn small" data-title="Project C — Data Tool" data-desc="Python-based data processing and visualization tool. Uses pandas and matplotlib to clean and chart datasets.">View</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>If you'd like to reach out, email me at <a href="mailto:allencaya132@gmail.com">allencaya132@gmail.com</a> or call 09773069531.</p>
+      <p>Location: Sulib, Pangil, Laguna</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Allen Paulo V. Caya</h4>
+        <p>IT Student | Web & Mobile Developer</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><a href="tel:+639773069531">09773069531</a></li>
+          <li><a href="mailto:allencaya132@gmail.com">allencaya132@gmail.com</a></li>
+          <li>Sulib, Pangil, Laguna</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Allen Paulo V. Caya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close">×</button>
+      <h3 id="modalTitle"></h3>
+      <div id="modalImages" style="display:none;margin:12px 0">
+        <img id="modalImg1" src="" alt="Screenshot 1" style="width:100%;max-height:400px;object-fit:contain;margin:8px 0;border-radius:8px">
+        <img id="modalImg2" src="" alt="Screenshot 2" style="width:100%;max-height:400px;object-fit:contain;margin:8px 0;border-radius:8px">
+      </div>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <div id="certModal" class="modal" aria-hidden="true">
+    <div class="modal-content cert-modal-content">
+      <button id="closeCertModal" class="close">×</button>
+      <img id="certImage" src="" alt="Certificate">
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
