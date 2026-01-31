@@ -1,29 +1,57 @@
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('year').textContent = new Date().getFullYear();
+
   const modal = document.getElementById('modal');
   const modalTitle = document.getElementById('modalTitle');
   const modalDesc = document.getElementById('modalDesc');
+  const modalImages = document.getElementById('modalImages');
+  const modalImgs = modalImages.querySelectorAll('img');
   const close = document.getElementById('closeModal');
-  document.querySelectorAll('.project-card button').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
+
+  document.querySelectorAll('.project-card button').forEach(btn => {
+    btn.addEventListener('click', () => {
       modalTitle.textContent = btn.dataset.title || 'Project';
       modalDesc.textContent = btn.dataset.desc || '';
-      const modalImages = document.getElementById('modalImages');
-      const modalImg1 = document.getElementById('modalImg1');
-      const modalImg2 = document.getElementById('modalImg2');
-      if(btn.dataset.img1){
-        modalImg1.src = btn.dataset.img1;
-        if(btn.dataset.img2) modalImg2.src = btn.dataset.img2;
-        modalImages.style.display = 'block';
-      } else {
-        modalImages.style.display = 'none';
-      }
-      modal.setAttribute('aria-hidden','false');
-    })
-  })
 
-  close.addEventListener('click', ()=> modal.setAttribute('aria-hidden','true'));
-  modal.addEventListener('click', (e)=>{ if(e.target===modal) modal.setAttribute('aria-hidden','true'); })
+      let hasImages = false;
+
+      modalImgs.forEach((img, i) => {
+        const key = `img${i + 1}`;
+        if (btn.dataset[key]) {
+          img.src = btn.dataset[key];
+          img.style.display = 'block';
+          hasImages = true;
+        } else {
+          img.src = '';
+          img.style.display = 'none';
+        }
+      });
+
+      modalImages.style.display = hasImages ? 'grid' : 'none';
+      modal.setAttribute('aria-hidden', 'false');
+    });
+  });
+
+  // Close button
+  close.addEventListener('click', () => {
+    modal.setAttribute('aria-hidden', 'true');
+  });
+
+  // Click outside modal-content
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  // ESC key close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+      modal.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+
 
   // Certificate modal
   const certModal = document.getElementById('certModal');
@@ -99,6 +127,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   
   sections.forEach((el, idx)=> {
     if(idx % 2 === 0) el.classList.add('reveal');
+    if(idx % 2 === 1) el.classList.add('reveal-l');
     else el.classList.add('reveal-r');
   });
 

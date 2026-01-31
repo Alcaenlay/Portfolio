@@ -21,10 +21,10 @@
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#" data-target="hero">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li class="nav-theme"><button id="themeToggleNav" class="btn ghost" aria-pressed="true">Theme</button></li>
       </ul>
@@ -64,6 +64,10 @@
     <section id="certifications" class="card">
       <h2>Certifications</h2>
       <div class="certs-grid">
+        <div class="cert-card" data-cert="assets/images/certs/HTML5 Application Development_certifcate.jpg">
+          <img src="assets/images/certs/HTML5 Application Development_certifcate.jpg" alt="HTML 5 Certificate">
+          <p>HTML5 Application Development – Pearson</p>
+        </div>
         <div class="cert-card" data-cert="assets/images/certs/Python Developer_certificate.jpg">
           <img src="assets/images/certs/Python Developer_certificate.jpg" alt="Python Developer Certificate">
           <p>Python Developer – sololearn</p>
@@ -89,46 +93,105 @@
 
     <section id="education" class="card">
       <h2>Education</h2>
-      <ul>
-        <li>Laguna State Polytechnic University Siniloan Campus | 2022–Present</li>
-        <li>Siniloan Integrated National High School | 2021–2022</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="card">
-      <h2>Past Projects</h2>
-      <p>Below are some projects I've worked on. Click a card for details.</p>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image"><img src="assets/images/proj/proj1/1.png" alt="Teachy Tally web view"></div>
-          <h3>Teachy Tally — Web App</h3>
-          <p>All-in-One Classroom Assistant for attendance, scheduling, and grading.</p>
-          <div style="display:flex;gap:6px">
-            <button class="btn small" data-title="Teachy Tally" data-desc="TeachyTally empowers educators to track attendance with QR codes, manage class schedules, and maintain a digital gradebook. Generate unique QR codes for students, scan for instant attendance marking, enter grades in a digital gradebook, and get AI-powered insights with daily logs and reports." data-img1="assets/images/proj/proj1/1.png" data-img2="assets/images/proj/proj1/2.png">Learn More</button>
-            <a href="https://teachy-tally.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn small">View Live</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image"><img src="assets/images/project2.svg" alt="Project B screenshot"></div>
-          <h3>Project B — Web App</h3>
-          <p>Web application for inventory tracking (PHP, MySQL).</p>
-          <button class="btn small" data-title="Project B — Web App" data-desc="A responsive inventory tracking system developed with PHP and MySQL. Includes reports and role-based access.">View</button>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image"><img src="assets/images/project3.svg" alt="Project C screenshot"></div>
-          <h3>Project C — Data Tool</h3>
-          <p>Python tool for data processing and visualization.</p>
-          <button class="btn small" data-title="Project C — Data Tool" data-desc="Python-based data processing and visualization tool. Uses pandas and matplotlib to clean and chart datasets.">View</button>
-        </div>
+      <div class="certs-grid">
+      <div class="educ-img-container"><img src="assets/images/edu/lspu.avif" alt="LSPU Logo" class="educ-img"><p>Laguna State Polytechnic University Siniloan Campus | 2022–Present</p></div>
+      <div class="educ-img-container"><img src="assets/images/edu/sinhs.png" alt="SINHS Logo" class="educ-img"><p>Siniloan Integrated National High School | 2021–2022</p></div>
       </div>
+      </section>
     </section>
 
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="card">
+    <h2>Past Projects</h2>
+    <p>Below are some projects I've worked on. Click a card for details.</p>
+
+    <div class="projects-grid">
+
+          <div class="project-card">
+      <div class="project-image">
+        <img src="assets/images/proj/proj1/1.png" alt="Teachy Tally web view">
+      </div>
+      <h3>Teachy Tally — Web App</h3>
+      <p>All-in-One Classroom Assistant for attendance, scheduling, and grading.</p>
+
+      <div style="display:flex;gap:6px">
+        <button class="btn small"
+          data-title="Teachy Tally"
+          data-desc="TeachyTally empowers educators to track attendance with QR codes, manage class schedules, and maintain a digital gradebook. Generate unique QR codes for students, scan for instant attendance marking, enter grades in a digital gradebook, and get AI-powered insights with daily logs and reports."
+          data-img1="assets/images/proj/proj1/1.png"
+          data-img2="assets/images/proj/proj1/2.png">
+          Learn More
+        </button>
+
+        <a href="https://teachy-tally.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn small">
+          View Live
+        </a>
+      </div>
+    </div>
+
+      <!-- BIN BRAWLERZ -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="assets/images/proj/proj2/1.png" alt="BIN BRAWLERZ Gameplay">
+        </div>
+
+        <h3>BIN BRAWLERZ — Android Game</h3>
+        <p>2D action-brawler connecting real-world recycling to in-game robot combat.</p>
+
+        <button class="btn small"
+          data-title="BIN BRAWLERZ: Gamified Waste Management"
+          data-desc="Role: Developer / Researcher&#10;
+  Tech Stack: Java, XML, Android Studio, Firebase, IbisPaint X&#10;&#10;
+  BIN BRAWLERZ is a 2D action-brawler mobile game designed to address solid waste management issues in the Philippines."
+          data-img1="assets/images/proj/proj2/1.png"
+          data-img2="assets/images/proj/proj2/2.png"
+          data-img3="assets/images/proj/proj2/3.png"
+          data-img4="assets/images/proj/proj2/4.png"
+          data-img5="assets/images/proj/proj2/5.png"
+          data-img6="assets/images/proj/proj2/6.png"
+          data-img7="assets/images/proj/proj2/7.png">
+          View Details
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+<!-- MODAL -->
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+
+    <button id="closeModal" class="close" aria-label="Close modal">×</button>
+
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+
+    <div id="modalImages" style="display:grid;gap:10px;margin-top:10px">
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>
+    </div>
+
+  </div>
+</div>
+</section>
     <section id="contact" class="card">
       <h2>Contact</h2>
-      <p>If you'd like to reach out, email me at <a href="mailto:allencaya132@gmail.com">allencaya132@gmail.com</a> or call 09773069531.</p>
-      <p>Location: Sulib, Pangil, Laguna</p>
+      <p>Email: <a href="mailto:allencaya132@gmail.com">allencaya132@gmail.com</a></p>
+      <p>Phone: 09773069531</p>
+      <p>Socials: </p>
+      <p>
+        <a href="https://ph.linkedin.com/in/allen-paulo-caya-624062280" target="_blank" rel="noopener noreferrer"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/Alcaenlay" target="_blank" rel="noopener noreferrer"><img src="assets/images/github.png" alt="GitHub"></a>
+        <a href="https://www.facebook.com/nyaaarkk" target="_blank" rel="noopener noreferrer"><img src="assets/images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/alcaenlay/" target="_blank" rel="noopener noreferrer"><img src="assets/images/instagram.png" alt="Instagram"></a>
+      </p>
+      <p>Location: <br>336 Lakyan Road,<br> Sulib, Pangil,<br> Laguna, Philippines</p>
     </section>
   </main>
 
