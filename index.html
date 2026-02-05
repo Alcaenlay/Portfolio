@@ -51,7 +51,7 @@
   </header>
 
   <main class="container">
-    <section id="skills" class="card">
+    <section id="skills" class="card scroll-l">
       <h2>Professional Skills</h2>
       <ul class="skills-grid">
         <li class="skill-item"><img src="assets/images/html.svg" class="skill-icon" alt="HTML"> <div><strong>Web Development:</strong> HTML, CSS, JavaScript, React, PHP, Python, Java</div></li>
@@ -61,7 +61,7 @@
       </ul>
     </section>
 
-    <section id="certifications" class="card">
+    <section id="certifications" class="card scroll-r">
       <h2>Certifications</h2>
       <div class="certs-grid">
         <div class="cert-card" data-cert="assets/images/certs/HTML5 Application Development_certifcate.jpg">
@@ -91,7 +91,7 @@
       </div>
     </section>
 
-    <section id="education" class="card">
+    <section id="education" class="card scroll-l">
       <h2>Education</h2>
       <div class="certs-grid">
       <div class="educ-img-container"><img src="assets/images/edu/lspu.avif" alt="LSPU Logo" class="educ-img"><p>Laguna State Polytechnic University Siniloan Campus | 2022–Present</p></div>
@@ -101,7 +101,7 @@
     </section>
 
   <!-- PROJECTS SECTION -->
-  <section id="projects" class="card">
+  <section id="projects" class="card scroll-r">
     <h2>Past Projects</h2>
     <p>Below are some projects I've worked on. Click a card for details.</p>
 
@@ -141,8 +141,8 @@
         <button class="btn small"
           data-title="BIN BRAWLERZ: Gamified Waste Management"
           data-desc="Role: Developer / Researcher&#10;
-  Tech Stack: Java, XML, Android Studio, Firebase, IbisPaint X&#10;&#10;
-  BIN BRAWLERZ is a 2D action-brawler mobile game designed to address solid waste management issues in the Philippines."
+          Tech Stack: Java, XML, Android Studio, Firebase, IbisPaint X&#10;&#10;
+          BIN BRAWLERZ is a 2D action-brawler mobile game designed to address solid waste management issues in the Philippines."
           data-img1="assets/images/proj/proj2/1.png"
           data-img2="assets/images/proj/proj2/2.png"
           data-img3="assets/images/proj/proj2/3.png"
@@ -157,30 +157,32 @@
     </div>
   </section>
 
-<!-- MODAL -->
-<div id="modal" class="modal" aria-hidden="true">
-  <div class="modal-content">
+  <!-- MODAL -->
+  <section>
+      <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
 
-    <button id="closeModal" class="close" aria-label="Close modal">×</button>
+          <button id="closeModal" class="close" aria-label="Close modal">×</button>
 
-    <h3 id="modalTitle"></h3>
-    <p id="modalDesc"></p>
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
 
-    <div id="modalImages" style="display:grid;gap:10px;margin-top:10px">
-      <img>
-      <img>
-      <img>
-      <img>
-      <img>
-      <img>
-      <img>
-      <img>
-    </div>
+          <div id="modalImages" style="display:grid;gap:10px;margin-top:10px">
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+          </div>
 
-  </div>
-</div>
-</section>
-    <section id="contact" class="card">
+        </div>
+      </div>
+  </section>
+    
+  <section id="contact" class="card scroll-l">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:allencaya132@gmail.com">allencaya132@gmail.com</a></p>
       <p>Phone: 09773069531</p>
@@ -192,8 +194,10 @@
         <a href="https://www.instagram.com/alcaenlay/" target="_blank" rel="noopener noreferrer"><img src="assets/images/instagram.png" alt="Instagram"></a>
       </p>
       <p>Location: <br>336 Lakyan Road,<br> Sulib, Pangil,<br> Laguna, Philippines</p>
-    </section>
-  </main>
+ </section>
+
+  
+</main>
 
   <footer class="site-footer">
     <div class="container footer-content">

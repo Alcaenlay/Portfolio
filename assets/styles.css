@@ -145,7 +145,6 @@ body{background: radial-gradient(1200px 400px at 10% 10%, rgba(79,140,255,0.06),
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
 #education h2 {
   width: 100%;
@@ -161,7 +160,27 @@ body{background: radial-gradient(1200px 400px at 10% 10%, rgba(79,140,255,0.06),
   margin-right: 6px;
 }
 
+@keyframes scrollslide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+@keyframes scrollslide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 @media (max-width:560px){.hero{padding:28px 0}.hero h1{font-size:20px}}
 
@@ -175,6 +194,18 @@ body{background: radial-gradient(1200px 400px at 10% 10%, rgba(79,140,255,0.06),
   #contact {
     font-size: 14px;
   }
+}
+
+.scroll-l{
+  animation: scrollslide-left linear;
+  animation-timeline: view();
+  animation-range: entry 0% ;
+}
+
+.scroll-r {
+  animation: scrollslide-right linear;
+  animation-timeline: view();
+  animation-range: entry 0% ;
 }
 
 .avatar{width:140px;height:140px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.06);box-shadow:0 10px 30px rgba(2,6,23,0.2);overflow:hidden}
