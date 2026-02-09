@@ -51,6 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // hide other sections when nav links are clicked but refresh when hero is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const target = link.getAttribute('href').replace('#', '');
+      if (target === 'hero') {
+        document.querySelectorAll('header, section').forEach(s => s.style.display = '');
+      } else {
+        document.querySelectorAll('header, section').forEach(s => s.style.display = 'none');
+        const el = document.getElementById(target);
+        if (el) el.style.display = '';
+      }
+    });
+  });
+  // for when logo is clicked
+  document.querySelector('.brand').addEventListener('click', (e) => {
+    document.querySelectorAll('header, section').forEach(s => s.style.display = '');
+  });
+  
+
 
 
   // Certificate modal

@@ -163,7 +163,7 @@ body{background: radial-gradient(1200px 400px at 10% 10%, rgba(79,140,255,0.06),
 @keyframes scrollslide-right {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-400px);
   }
   100% {
     opacity: 1;
@@ -174,7 +174,7 @@ body{background: radial-gradient(1200px 400px at 10% 10%, rgba(79,140,255,0.06),
 @keyframes scrollslide-left {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(400px);
   }
   100% {
     opacity: 1;
