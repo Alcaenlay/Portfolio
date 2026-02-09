@@ -61,6 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('header, section').forEach(s => s.style.display = 'none');
         const el = document.getElementById(target);
         if (el) el.style.display = '';
+        const modal = document.getElementById('modal-section');
+        if (modal) modal.style.display = '';
       }
     });
   });
